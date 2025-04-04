@@ -1,0 +1,46 @@
+{
+    "jobs": [
+        {
+            "id": 1,
+            "title": "Software Engineer",
+            "department": "Information Technology",
+            "description": "Design and develop government software applications",
+            "qualifications": [
+                "Bachelor's degree in Computer Science or related field",
+                "3+ years of software development experience",
+                "Proficiency in Python and JavaScript"
+            ],
+            "how_to_apply": "Submit your application through the government careers portal",
+            "deadline": "2024-03-31",
+            "external_link": "https://careers.gov/jobs/software-engineer"
+        },
+        {
+            "id": 2,
+            "title": "Policy Analyst",
+            "department": "Policy and Planning",
+            "description": "Analyze and develop public policy recommendations",
+            "qualifications": [
+                "Master's degree in Public Policy or related field",
+                "2+ years of policy analysis experience",
+                "Strong research and writing skills"
+            ],
+            "how_to_apply": "Email your resume to hiring@gov.org",
+            "deadline": "2024-04-15",
+            "external_link": "https://careers.gov/jobs/policy-analyst"
+        },
+        {
+            "id": 3,
+            "title": "Environmental Scientist",
+            "department": "Environmental Protection",
+            "description": "Conduct environmental impact assessments and research",
+            "qualifications": [
+                "Ph.D. in Environmental Science",
+                "5+ years of research experience",
+                "Published research papers in relevant fields"
+            ],
+            "how_to_apply": "Apply through the scientific recruitment portal",
+            "deadline": "2024-05-01",
+            "external_link": "https://careers.gov/jobs/environmental-scientist"
+        }
+    ]
+}

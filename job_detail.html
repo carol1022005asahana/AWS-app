@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ job.title }} - Government Job Finder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-4">
+        <a href="{{ url_for('home') }}" class="btn btn-secondary mb-4">← Back to Jobs</a>
+        
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">{{ job.title }}</h1>
+                <h5 class="card-subtitle mb-3 text-muted">{{ job.department }}</h5>
+                
+                <div class="mb-4">
+                    <h4>Description</h4>
+                    <p>{{ job.description }}</p>
+                </div>
+                
+                <div class="mb-4">
+                    <h4>Qualifications</h4>
+                    <ul>
+                        {% for qualification in job.qualifications %}
+                        <li>{{ qualification }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                
+                <div class="mb-4">
+                    <h4>How to Apply</h4>
+                    <p>{{ job.how_to_apply }}</p>
+                </div>
+                
+                <div class="mb-4">
+                    <h4>Application Deadline</h4>
+                    <p>{{ job.deadline }}</p>
+                </div>
+                
+                <a href="{{ job.external_link }}" class="btn btn-primary" target="_blank">
+                    Apply Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
